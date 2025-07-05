@@ -37,6 +37,7 @@ class FGOSHtmlWriter {
                 a { color: #3949ab; text-decoration: none; }
                 a:hover { text-decoration: underline; }
                 .competencies { margin-top: 0; }
+                .collapsed { display: none; }
             </style>
         """
 
