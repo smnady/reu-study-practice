@@ -1,4 +1,4 @@
-package fgos.html
+package fgos.io
 
 import fgos.model.FGOSCompetency
 import groovy.util.logging.Slf4j

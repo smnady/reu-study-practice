@@ -1,7 +1,6 @@
 package fgos;
 
-
-import fgos.html.FGOSHtmlWriter;
+import fgos.io.FGOSHtmlWriter;
 import fgos.parser.impl.FGOSParserNew;
 import fgos.parser.impl.FGOSParserOld;
 
