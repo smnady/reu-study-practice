@@ -1,5 +1,7 @@
 package profstandart;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import profstandart.io.ProfStandardHtmlWriter;
 import profstandart.model.ProfStandart;
 import profstandart.parser.ProfStandartParser;
@@ -9,6 +11,8 @@ import java.util.List;
 
 
 public class ProfStandartParsingDemoRunner {
+
+    public static final Logger LOGGER = LoggerFactory.getLogger(ProfStandartParsingDemoRunner.class);
 
     private static final String RESULT_FILE = "parsed_profstandarts.html";
     private static final String PATH_TO_DIR = "src/main/resources/profstandart/";
@@ -29,7 +33,7 @@ public class ProfStandartParsingDemoRunner {
         List<ProfStandart> standards = parser.parse(PROF_STANDARTS_FOR_DEMO);
 
         ProfStandardHtmlWriter.writeHtml(standards, RESULT_FILE);
-        System.out.println("Результат парсинга проф. стандартов записан в файл: " + RESULT_FILE);
+        LOGGER.info("Результат парсинга проф. стандартов записан в файл: {}", RESULT_FILE);
     }
 
 }
